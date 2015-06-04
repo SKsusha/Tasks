@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Наша страничка</title>
+    <script>
+        
+        function showmsgbox() {
+            var msg = document.getElementById('Text1');
+            window.alert("Hello, "+ msg.value);
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center" style="color:green"> Привет </h1>
+    <b>Напишите имя</b> 
+    <input id="Text1" type="text"/>
+    <input id="Button1" type="button" value="Нажмите" onclick="showmsgbox()"/>
+</body>
+</html>

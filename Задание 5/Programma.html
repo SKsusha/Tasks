@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+	<title>Ввод даных</title>
+</head>
+<body>
+
+	<script language="JavaScript" type="text/javascript" >
+		
+	function getId(x) 
+	{
+	return document.getElementById(x);
+	}
+	
+	function hi() 
+	{
+	if (getId('name').value !== 'Введите имя' && getId('age').value !== 'null' && getId('prof').value !== 'Введите название профессии') 
+	{
+	getId('out').innerHTML = "Вас зовут "+getId('name').value+", вам "+getId('age').value+", вы хотите стать "+getId('prof').value;
+	} 
+	else getId('out').innerHTML = 'Введите корректные данные';
+	}
+	</script>
+	
+Как вас зовут: <input type='text' size='20' maxlength='15'  id='name'>.
+	<br>
+	Сколько вам лет: <input type="number" size="30" maxlength='3'  min="1" max="150"  id='age'>.
+	<br>
+	Я хочу стать <input type='text' size='35' maxlength='25'  id='prof'>.
+	<br><br>
+	<input type="submit" value="Вывод данных на экран" onclick='hi()'>
+	<p id='out'></p>
+	
+</body>
+</html>
